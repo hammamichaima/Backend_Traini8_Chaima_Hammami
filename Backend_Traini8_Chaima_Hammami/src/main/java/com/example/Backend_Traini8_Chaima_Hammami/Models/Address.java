@@ -21,5 +21,14 @@ public class Address {
 
     @NotBlank(message = "Pincode is required")
     private String pincode;
+
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 }
 

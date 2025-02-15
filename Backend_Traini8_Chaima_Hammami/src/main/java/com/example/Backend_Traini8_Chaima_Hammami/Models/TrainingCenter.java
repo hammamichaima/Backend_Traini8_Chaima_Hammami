@@ -34,8 +34,6 @@ public class TrainingCenter {
 
 
 
-
-
     @Min(value = 1, message = "Student capacity must be at least 1")
     private int studentCapacity;
 
@@ -50,7 +48,6 @@ public class TrainingCenter {
 
     @Pattern(regexp = "^[0-9]{10}$", message = "Phone number must be 10 digits")
     private String contactPhone;
-
 
 
 
@@ -117,7 +114,16 @@ public class TrainingCenter {
     }
 
     public void setContactEmail(String contactEmail) {
-        this.contactEmail = contactEmail;
+        this.contactPhone = contactPhone;
     }
+    public String getContactPhone() {
+        return contactEmail;
+    }
+
+    public void setContactPhone(String contactPhone) {
+        this.contactPhone = contactPhone;
+    }
+
+
 
 }
