@@ -51,11 +51,17 @@ public class TrainingCenter {
     @Pattern(regexp = "^[0-9]{10}$", message = "Phone number must be 10 digits")
     private String contactPhone;
 
+
+
+
     @PrePersist
-    protected void onCreate() {
+    private void onCreate() {
         this.createdOn = Instant.now();
     }
 
+    public Instant getCreatedOn() {
+        return createdOn;
+    }
 
 
     public Long getId() {
